@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/0c815b8bc2.js" crossorigin="anonymous"></script>
+    <title>Friends | Kakao Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">   
+            <span class="status-bar__clock">13:54</span> 
+        </div>   
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i>  
+            <i class="fas fa-volume-mute"></i> 
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-ban"></i>
+            <span class="status-bar__battery-level">75%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+        </div>
+    </div>  
+    <header class="header">
+        <div class="header__header-column">
+            <h1 class="header__title">Friend</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">   
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-cog fa"></i> 
+            </span>
+        </div>
+    </header>
+    <main class="friends">
+        <ul class="friends__list">
+            <li class="friends__friend friend friend--lg">  <!-- '--'은 +라는 뜻. lg는 large -->
+                <img src="image/kakao_1.jpg" class="g-profile friend__profile"/>
+                <div class="friend__content">
+                    <span class="friend__name">Yang Hanah</span>
+                    <span class="friend__status">lalala</span>     <!--7:00-->
+                </div>
+            </li>
+        </ul>
+
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">  
+            <li class="nav__list-item">  
+                <a href="friends.html" class="nav__list-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li> 
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="far fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>   
+
+        </ul>
+    </nav>
+</body>
+</html>
