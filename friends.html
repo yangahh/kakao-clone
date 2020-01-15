@@ -35,14 +35,47 @@
         </div>
     </header>
     <main class="friends">
-        <ul class="friends__list">
-            <li class="friends__friend friend friend--lg">  <!-- '--'은 +라는 뜻. lg는 large -->
-                <img src="image/kakao_1.jpg" class="g-profile friend__profile"/>
-                <div class="friend__content">
-                    <span class="friend__name">Yang Hanah</span>
-                    <span class="friend__status">lalala</span>     <!--7:00-->
+        <header class="friends__header">  <!--header는 한 페이지에 여러 개 있을 수 있다-->
+            <div class="friends__friend friend friend--lg"> <!--내 프로필-->  <!-- '--'은 +라는 뜻. lg는 large --> 
+            <!--위에서 li를 div로 바꾼 이유는 내 프로필만 보여주는 부분이라 리스트로 만들 필요가 없기 때문-->
+                <div class="friend__column"> <!--친구 프로필에서 왼쪽 부분-->
+                    <img src="image/kakao_1.jpg" class="g-profile friend__profile"/>
+                    <div class="friend__content">
+                        <span class="friend__name">Yang Hanah</span>
+                        <span class="friend__status">lalala</span>
+                    </div>
                 </div>
-            </li>
+            </div>
+        </header>
+        <div class="friend__plus"> <!--플러스 친구-->
+            <h5 class="friends__title">Plus Friend</h5>
+            <div class="friends__friend friend"> <!--위에 내 프로필 부분에서 복붙. 차이점은 여기서부터는 friend--lg가 없고 friend__status가 없음-->
+                 <div class="friend__column">  <!--친구 프로필에서 왼쪽 부분-->
+                    <img src="image/plus.jpg" class="g-profile friend__profile"/>
+                    <div class="friend__content">
+                        <span class="friend__name">Plus Friend</span>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <ul class="friends__list"> <!--친구 목록-->
+            <h5 class="friends__title">Friends 150</h5>
+                <li class="friends__friend friend"> <!--위에 내 프로필 부분에서 복붙. 차이점은 friend--lg가 없음-->
+                    <div class="friend__column">
+                        <img src="image/kakao_1.jpg" class="g-profile friend__profile"/>
+                        <div class="friend__content">
+                            <span class="friend__name">Kim</span>
+                            <span class="friend__status">hahaha</span>
+                        </div>
+                    </div>
+                    <div class="friend__column">  <!--친구 프로필에서 오른쪽 부분. 뮤직 플레이어 등-->
+                        <div class="now-listening">
+                            <span class="music">Rest-Back Yelin</span>
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>                    
+                </li>
+            
         </ul>
 
     </main>
