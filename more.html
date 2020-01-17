@@ -33,10 +33,90 @@
                 <i class="fas fa-qrcode"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-cog fa"></i> 
+                <a href="settings.html">
+                    <i class="fas fa-cog fa"></i>
+                </a> 
             </span>
         </div>
     </header>
+    <main class="more">
+        <header class="more__header">   <!--내 프로필-->
+
+
+            <!-- <li class="friends__friend friend"> 
+                <div class="friend__column">
+                    <img src="image/kakao_1.jpg" class="g-profile friend__profile"/>
+                    <div class="friend__content">
+                        <span class="friend__name">Kim</span>
+                        <span class="friend__status">hahaha</span>
+                    </div>
+                </div>
+                <div class="friend__column">  
+                    <div class="now-listening">
+                        <span class="music">Rest-Back Yelin</span>
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>                    
+            </li>   friend에 있는 거 그대로 가져다 써도 됨(li는 div로 수정)(class는 그대로 유지해도 됨-->
+
+            <div class="myinfo">
+                <div class="myinfo__column">   <!--내 프로필에서 왼쪽 부분-->
+                    <img src="image/kakao_1.jpg" class="g-profile myinfo__profile"/>
+                    <div class="myinfo__content">
+                        <span class="myinfo__name">Yang</span>
+                        <span class="myinfo__email">toaur6802@gmail.com</span>
+                    </div>
+                </div>
+                <div class="myinfo__column"> 
+                    <i class="far fa-comment-alt fa-2x"></i>
+                </div> 
+            </div>
+            <ul class="more__btn-list"> <!--내 설정(이모티콘, 테마, 계정)-->
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="far fa-smile-wink"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Emoticons
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="fas fa-brush"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Themes
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Account
+                    </span>
+                </li>
+            </ul>  <!--여기까지 헤더로 묶는 이유는 이 아래 선이 보이기 때문-->                   
+        </header>
+        <section class="more__sugestions">
+            <h5 class="more__suggestions-title">Suggestions</h5>
+            <ul class="more__suggestions-list ">
+                <li class="more__suggestion suggestion">
+                    <img src="image/kakao_story.png" class="suggestion__img">
+                    <span class="suggestion__title">Kakao Story</span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <img src="image/kakao_friends.jpg" class="suggestion__img">
+                    <span class="suggestion__title">Kakao friends</span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <img src="image/friends_gem.jpg" class="suggestion__img">
+                    <span class="suggestion__title">Friends Gem</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+        
     <nav class="nav">
         <ul class="nav__list"> 
             <li class="nav__list-item"> 
