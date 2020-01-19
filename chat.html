@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/0c815b8bc2.js" crossorigin="anonymous"></script>
+    <title>Chat | Kakao Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">   
+            <span class="status-bar__clock">13:54</span>
+        </div>   
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i>  
+            <i class="fas fa-volume-mute"></i> 
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-ban"></i>
+            <span class="status-bar__battery-level">75%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+        </div>
+    </div> 
+    <header class="header">
+        <div class="header__header-column">
+            <a href="index.html">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+            <h1 class="header__title">Lynn</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">    
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">    
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">Friday,January 11, 2019</span>
+            <li class="incoming-message"> <!--수신된 메세지 부분-->
+                <img class="chat__profile g-profile message__profile" src="image\kakao_1.jpg">
+                <div class="message__content">
+                    <span class="message__author">Lynn</span>
+                    <div class="message__bubble">
+                        Congrates!
+                    </div>
+                </div>
+                <span class="message__timestamp"></span>
+            </li>
+            <li class="outcoming-message"> <!--발신된 메세지 부분-->
+                <span class="message__timestamp"></span>
+                <div class="message__content">
+                    <div class="message__bubble">
+                        Thank you
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div class="chat__write">
+        <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__write-column">
+            <input type="text" placeholder="Send message" class="chat__write-input">
+        </div>
+        <div class="chat__write-column">
+            <span class="chat__wirte-icon">
+                <i class="far fa-grin"></i>
+            </span>
+            <span class="chat__wirte-icon">
+                <i class="fas fa-microphone"></i>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
